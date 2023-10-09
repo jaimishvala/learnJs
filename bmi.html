@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .error {
+            color: red;
+            font-size: 90%;
+        }
+    </style>
+
+    <link rel="stylesheet" href="css/bmi.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>BMI Calculate:</h2>
+        <br><br>
+
+        <form action="" onsubmit="return handleBMI()">
+
+            <span>Weight:</span>
+            <input type="text" name="weight" id="weight" placeholder="Enter Weight">
+            <br>
+            <span class="error" id="WeightErr"></span>
+            <br><br>
+            <span>Height:</span>
+            <input type="text" name="height" id="height" placeholder="Enter height">
+            <br>
+            <span class="error" id="HeightErr"></span>
+            <br><br>
+            <input type="submit" id="button">
+        </form>
+
+        <br>
+        <span>Result:</span>
+        <span id="ans"></span>
+        <br><br>
+        <span id="ans1"></span>
+
+    </div>
+
+    <script src="js/bmi.js"></script>
+</body>
+
+</html>

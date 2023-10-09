@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .error {
+            color: red;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <form action="" name="form" onsubmit="return handleProduct()">
+
+        <span>Name:</span>
+        <input type="text" name="name" placeholder="Enter Name">
+        <br>
+        <span id="nameErr" class="error"></span>
+        <br><br>
+
+        <span>Description:</span>
+        <br>
+        <textarea name="description" cols="30" rows="10"></textarea>
+        <br>
+        <span id="DescriptionErr" class="error"></span>
+        <br><br>
+
+        <span>Price:</span>
+        <input type="text" name="price" placeholder="Enter Price">
+        <br>
+        <span id="PriceErr" class="error"></span>
+        <br><br>
+
+        <span>Discount:</span>
+        <input type="radio" name="discount" value="y">Yes
+        <input type="radio" name="discount" value="n">No
+        <br>
+        <span id="DiscountErr" class="error"></span>
+        <br><br>
+
+        <span>Coupon Code:</span>
+        <input type="text" name="code" placeholder="Enter Coupon Code">
+        <br>
+        <span id="CouponErr"></span>
+        <br><br>
+
+        <input type="submit">
+
+    </form>
+    <br><br>
+
+
+    <table border="1">
+        <tr>
+            <th>Sr No.</th>
+            <th>Product Name</th>
+            <th>Description</th>
+            <th>Price</th>
+            <th>Discount</th>
+            <th>Coupon Code</th>
+        </tr>
+        <tr>
+            <td>1.</td>
+            <td id="ans1"></td>
+            <td id="ans2"></td>
+            <td id="ans3"></td>
+            <td id="ans4"></td>
+            <td id="ans5"></td>
+        </tr>
+    </table>
+
+
+
+    <script src="js/product.js"></script>
+</body>
+
+</html>

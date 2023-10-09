@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .error {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Hotel Bill Collection System:</h1>
+
+    <form action="" name="form" onsubmit="handleHotel()">
+        <span>Date:</span>
+        <input type="date" name="date" id="date">
+        <br>
+        <span id="dateError" class="error"></span>
+        <br><br>
+
+        <span>Table:</span>
+        <select name="table" id="table">
+            <option value="0">--Select--</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select>
+        <br>
+        <span id="tableError" class="error"></span>
+
+        <br><br>
+
+
+
+        <span>Food:</span>
+        <select name="food" id="food">
+            <option value="0">--Select--</option>
+            <option value="250">Panjabi</option>
+            <option value="150">Chinese</option>
+            <option value="200">South India</option>
+        </select>
+        <br>
+        <span id="foodError" class="error"></span>
+
+        <br><br>
+
+        <span>No Of Person:</span>
+        <input type="text" name="person_number" id="person_number">
+        <br>
+        <span id="personError" class="error"></span>
+        <br><br>
+
+        <input type="submit">
+
+    </form>
+
+    <br><br>
+
+    <table id="disp" border="2px">
+        <tr>
+            <th>Date</th>
+            <th>Table</th>
+            <th>Food</th>
+            <th>No.Of Person</th>
+            <th>Total Bill</th>
+            <th>Action</th>
+        </tr>
+    </table>
+
+
+
+    <script src="js/HotelSystem.js"></script>
+</body>
+
+</html>

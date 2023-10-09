@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/incometax.css">
+    <style>
+.error{
+    color: red;
+}
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <form action="" onsubmit="return incomeTax()">
+            <span>Salary:</span>
+            <input type="text" name="salary" id="salary" placeholder="Enter Salary">
+            <span id="salaryErr" class="error"></span>
+            <br><br>
+            <input type="submit">
+        </form>
+
+        <br><br>
+        <table border="1">
+            <tr>
+                <th>Sr No.</th>
+                <th>IncomeTaxSlab</th>
+                <th>IncomeTaxRate</th>
+                <th>TotalIncomeTax</th>
+            </tr>
+
+            <tr>
+                <td>1.</td>
+                <td>Up To 3Lakh</td>
+                <td>Nil</td>
+                <td id="disp"></td>
+            </tr>
+            <tr>
+                <td>2.</td>
+                <td>3Lakh-6Lakh</td>
+                <td>5%</td>
+                <td id="disp1"></td>
+            </tr>
+
+            <tr>
+                <td>3.</td>
+                <td>6Lakh-9Lakh</td>
+                <td>10%</td>
+                <td id="disp2"></td>
+            </tr>
+
+            <tr>
+                <td>4.</td>
+                <td>9Lakh-12Lakh</td>
+                <td>15%</td>
+                <td id="disp3"></td>
+            </tr>
+
+
+            <tr>
+                <td>5.</td>
+                <td>12Lakh-15Lakh</td>
+                <td>20%</td>
+                <td id="disp4"></td>
+            </tr>
+
+            <tr>
+                <td>6.</td>
+                <td>15Lakh To Above</td>
+                <td>30% </td>
+                <td id="disp5"></td>
+            </tr>
+
+            <tr>
+                <td>7.</td>
+                <td>Total</td>
+                <td>-</td>
+                <td id="total"></td>
+            </tr>
+
+        </table>
+
+    </div>
+
+    <script src="js/incometax.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    .error {
+        color: red;
+    }
+</style>
+
+<body>
+
+    <h2>Insuarance System:</h2>
+
+    <form action="" name="form" onsubmit="handleInsuarance()">
+
+        <span>Name:</span>
+        <input type="text" name="name" id="name">
+        <br><br>
+
+        <span>Dath Of Birth:</span>
+        <input type="date" name="age" id="age">
+        <br><br>
+
+        <span>Mobile No:</span>
+        <input type="text" name="mobile" id="mobile">
+        <br><br>
+
+        <span>Occupation:</span>
+        <input type="radio" name="occupation" value="Salary" id="occupation">Salary
+        <input type="radio" name="occupation" value="self_employee" id="occupation">Self Employee
+        <br><br>
+
+        <span>Annual Income:</span>
+        <select name="Annual_income" id="Annual_income">
+            <option value="0">--Select--</option>
+            <option value="0_3lakh">0-3Lakh</option>
+            <option value="3_5lakh">3to5Lakh</option>
+            <option value="5_10lakh">5to10Lakh</option>
+            <option value="above10lakh">Above 10Lakh</option>
+        </select>
+        <br><br>
+
+        <span>Insurance Amount:</span>
+        <input type="text" name="insuarance_amount" id="insuarance_amount">
+        <br>
+        <span id="InsuaranceError" class="error"></span>
+        <br><br>
+
+        <span>Smoke:</span>
+        <input type="radio" name="Smoke" value="yes">Yes
+        <input type="radio" name="Smoke" value="no">No
+        <br><br>
+
+        <input type="submit">
+    </form>
+    <br><br>
+
+
+    <div id="display">
+
+    </div>
+
+    <!-- Name Age Mobile-No Insurance-Amount Premium -->
+
+
+
+
+
+
+
+    <script src="js/insuarance.js"></script>
+</body>
+
+</html>

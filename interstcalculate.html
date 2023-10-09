@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/interscalculate.css">
+
+    <style>
+        .error {
+            color: red;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>Inters-Calculate:</h2>
+        <br><br>
+        <form action="" onsubmit="return handleIntersCalculate()">
+            <span>Principal Amount:</span>
+            <input type="text" name="principal" id="principal" placeholder="Enter Principal Amount">
+            <br>
+            <span id="PErr" class="error"></span>
+            <br><br>
+            <span>Rate Amount:</span>
+            <input type="text" name="rate" id="rate" placeholder="Enter Rate Amount">
+            <br>
+            <span id="RErr" class="error"></span>
+            <br><br>
+            <span>Time Amount:</span>
+            <input type="text" name="time" id="time" placeholder="Enter Time Amount">
+            <br>
+            <span id="TErr" class="error"></span>
+
+            <br><br>
+            <select name="calander" id="calander">
+                <option value="0">--Select--</option>
+                <option value="y">Year</option>
+                <option value="m">Month</option>
+            </select>
+            <br>
+            <span id="SErr" class="error"></span>
+            <br><br><br>
+            <input type="submit" id="btn" value="Calculate">
+        </form>
+        <br><br>
+
+        <span>Result:</span>
+        <span id="ans"></span>
+    </div>
+
+
+    <script src="js/interscalculate.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/captcha.css">
+
+    <style>
+        .capErr{
+            color: red;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>Captcha Calculate:</h2>
+        <br><br>
+        <span id="n1"></span>
+        +
+        <span id="n2"></span>
+        =
+        <br><br>
+        <form action="" onsubmit="return handleCaptcha()">
+            <input type="text" name="a" id="a" placeholder="Enter Answer">
+            <span id="ansErr" class="capErr"></span>
+            <br><br>
+            <input type="submit" id="button">
+        </form>
+    </div>
+
+
+
+    <script src="js/captcha.js"></script>
+</body>
+
+</html>
